@@ -12,7 +12,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: "My Personal Website",
+    title: "Soujanya Nekkanti",
     author: "Soujanya Nekkanti",
     twitter: "https://twitter.com/soujanya1604",
     linkedin: "https://www.linkedin.com/in/lakshmisowjanyanekkanti1604/",

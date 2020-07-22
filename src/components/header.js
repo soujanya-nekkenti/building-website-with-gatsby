@@ -23,10 +23,10 @@ function Header() {
         <div>
           {data.allSite.edges.map(({ node }) => (
             <div>
-              <Navbar bg="dark" variant="dark">
+              <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
                 <Navbar.Brand href="/">{node.siteMetadata.title}</Navbar.Brand>
                 <Nav>
-                  <Nav.Link href="/secondpage"> Second Page </Nav.Link>
+                  <Nav.Link href="/aboutMe"> About Me </Nav.Link>
                 </Nav>
               </Navbar>
             </div>
