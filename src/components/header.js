@@ -26,7 +26,7 @@ function Header() {
               <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="/">{node.siteMetadata.title}</Navbar.Brand>
                 <Nav>
-                  <Nav.Link href="/pagetwo"> Second Page </Nav.Link>
+                  <Nav.Link href="/secondpage"> Second Page </Nav.Link>
                 </Nav>
               </Navbar>
             </div>
