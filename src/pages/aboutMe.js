@@ -1,15 +1,57 @@
 import React from "react"
 import Layout from "../components/layout.js"
-import {
-  Wrapper,
-  Img as Image,
-  Text,
-  Flex,
-  Portrait,
-  Container,
-  PageTitle,
-} from "./aboutMeStyles"
 import image from "../images/image.jpg"
+import styled from "styled-components"
+
+const Wrapper = styled.div`
+  @media (max-width: 960px) {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+`
+
+const Image = styled.img`
+  margin-right: 0.6rem;
+`
+
+const Text = styled.p`
+  color: ##000000;
+  lineheight: 1;
+`
+
+const Flex = styled.div`
+  display: inline-block;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`
+
+const Portrait = styled.div`
+  float: right;
+  @media (max-width: 960px) {
+    max-width: 100%;
+  }
+`
+
+const Container = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 90%;
+  @media (min-width: 601px) {
+    width: 90%;
+  }
+  @media (min-width: 993px) {
+    width: 80%;
+  }
+`
+
+const PageTitle = styled.h1`
+  margin-bottom: 2rem;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+  color: black;
+`
 
 const Details = () => {
   return (
