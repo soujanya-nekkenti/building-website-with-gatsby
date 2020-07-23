@@ -18,4 +18,9 @@ module.exports = {
     linkedin: "https://www.linkedin.com/in/lakshmisowjanyanekkanti1604/",
     github: "https://github.com/soujanya-nekkenti",
   },
+  plugins: [
+    {
+      resolve: "gatsby-plugin-styled-components",
+    },
+  ],
 }
