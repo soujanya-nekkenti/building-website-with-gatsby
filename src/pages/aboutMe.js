@@ -28,7 +28,7 @@ const Flex = styled.div`
 `
 
 const Portrait = styled.div`
-  float: right;
+  float: left;
   @media (max-width: 960px) {
     max-width: 100%;
   }
@@ -47,6 +47,8 @@ const Container = styled.div`
 `
 
 const PageTitle = styled.h1`
+  margin-top: 2rem;
+  text-align: center;
   margin-bottom: 2rem;
   @media (max-width: 960px) {
     text-align: center;
@@ -93,7 +95,7 @@ export default () => {
                 src={image}
                 alt="just me chilling"
                 width="200px"
-                height="267px"
+                height="207px"
               />
             </Portrait>
             <Details />
