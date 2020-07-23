@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout.js"
-import image from "../images/image.JPG"
+import image from "../images/image.jpg"
 import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components"
 
