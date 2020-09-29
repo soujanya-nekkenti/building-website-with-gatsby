@@ -28,6 +28,9 @@ function Header() {
                 <Nav>
                   <Nav.Link href="/aboutMe"> About Me </Nav.Link>
                 </Nav>
+                <Nav>
+                  <Nav.Link href="/experience"> Experience </Nav.Link>
+                </Nav>
               </Navbar>
             </div>
           ))}

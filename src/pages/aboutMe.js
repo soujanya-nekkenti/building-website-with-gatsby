@@ -21,7 +21,7 @@ const Text = styled.p`
 `
 
 const Flex = styled.div`
-  display: inline-block;
+  display: flex;
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -69,8 +69,38 @@ const Details = () => {
       <Text
         lineHeight={1.6}
         color={"dark"}
-        dangerouslySetInnerHTML={{ __html: "Frontend Developer at ATG" }}
+        dangerouslySetInnerHTML={{
+          __html:
+            "Currently working as Frontend Developer and Scrum Master at ATG",
+        }}
       />
+
+      <Text lineHeight={1.6} color={"dark"}>
+        <div>
+          Highly motivated, passionate and creative software professional with
+          experience on end-to-end software development and web application
+          designing, possessing a set of frontend programming skills and
+          knowledge of various tools and frameworks with a fierce passion of
+          user experience and software integration.
+        </div>
+      </Text>
+      <Text lineHeight={1.6} color={"dark"}>
+        <div>
+          Around 2.5 years of professional experience working with programming
+          languages like Javascript, HTML, CSS, and frameworks like React JS,
+          React Native as a front-end developer. Education: Master of Science in
+          Software Engineering Bachelor of Technology in Computer Science
+          Engineering.
+        </div>
+      </Text>
+      <Text lineHeight={1.6} color={"dark"}>
+        <div>
+          A certified Scrum Master with good experience working with agile
+          processes. As a person, I strive to be the best at whatever I do.
+          Commited to quality and customer satisfaction with outstanding
+          verbal/written skills and attention to detail.
+        </div>
+      </Text>
       <Text lineHeight={1.6} color={"dark"}>
         For business inquiries feel free to get in touch with:
         <a href="mailto: soujanya.nekkenti@gmail.com"> Send an e-mail</a>
