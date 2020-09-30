@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const IconLoader = () => (
+export const IconLoader = () => (
   <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <title>Loader Logo</title>
     <g>
@@ -27,7 +27,7 @@ const IconLoader = () => (
   </svg>
 )
 
-const IconLinkedin = () => (
+export const IconLinkedin = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     role="img"
@@ -45,7 +45,7 @@ const IconLinkedin = () => (
   </svg>
 )
 
-const IconTwitter = () => (
+export const IconTwitter = () => (
   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 612 612">
     <title>Twitter</title>
     <path
@@ -60,7 +60,7 @@ const IconTwitter = () => (
   </svg>
 )
 
-const IconExternal = () => (
+export const IconExternal = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     role="img"
@@ -81,7 +81,7 @@ const IconExternal = () => (
   </svg>
 )
 
-const IconGitHub = () => (
+export const IconGitHub = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     role="img"
