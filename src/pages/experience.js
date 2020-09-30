@@ -32,7 +32,7 @@ const Experience = () => (
                 <StepperHead>
                   <div>
                     <h3>{item.designation}</h3>
-                    <a href={item.companyLink} target="_blank">
+                    <a href={item.companyLink} target="_blank" rel="noreferrer">
                       {item.name}
                     </a>
                     <p>{item.dated}</p>

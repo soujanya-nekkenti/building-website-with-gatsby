@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import MySelfIcon from "../images/girled.png"
 import Layout from "../components/layout.js"
 import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components"
@@ -8,7 +9,7 @@ const Button = styled.a`
   color: #fff;
   text-decoration: none;
   padding: 0.9rem 1.4rem;
-  background: #a8b2d1;
+  background: #fe81bb;
   border-radius: 0.3rem;
   box-shadow: rgba(168, 178, 209) 0px 13px 19px -6px;
   transition: 0.5s;
@@ -24,24 +25,15 @@ const Button = styled.a`
   &:first-child {
     margin-right: 1rem;
     background: #f9f9f9;
-    color: #a8b2d1;
+    color: #fe81bb;
     box-shadow: rgb(185, 185, 185) 0px 13px 19px -6px;
     &:hover {
-      box-shadow: 0px 0px 17px 0px rgba(185, 185, 185, 0.4);
+      box-shadow: 0px 0px 17px 0px rgba(0, 196, 255, 0.36);
     }
     @media (max-width: 380px) {
       margin: 0 auto 1.5rem auto;
     }
   }
-`
-
-const StyledContainer = styled.div`
-  padding: 4rem 1rem;
-  p {
-    color: gray;
-    margin-bottom: 2rem;
-  }
-  color: black;
 `
 
 const StyledFlex = styled.div`
@@ -51,45 +43,89 @@ const StyledFlex = styled.div`
     flex-direction: column;
   }
 `
-const SmallerContainer = styled.div`
-  max-width: 850px;
-  margin: 0 auto;
-  @media (max-width: 992px) {
-    width: 95%;
+
+export const UserWrapper = styled.div`
+  margin: 8% auto;
+  padding: 0 8%;
+`
+
+export const UserTitle = styled.h1`
+  font-size: 4.2em;
+  font-weight: bold;
+  color: #8a0040;
+  span {
+    color: #fe81bb;
+  }
+  @media (max-width: 700px) {
+    font-size: 2em;
+  }
+`
+
+export const UserDescription = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 10%;
+  margin-top: 4%;
+  h4 {
+    color: #8a0040;
+    font-weight: bold;
+    font-size: 26px;
+  }
+  p {
+    color: #fe81bb;
+    max-width: 90%;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 15%;
+  }
+  img {
+    max-width: 50%;
+  }
+  @media (max-width: 700px) {
+    flex-direction: column-reverse;
+    img {
+      max-width: 100%;
+    }
+    p {
+      max-width: 100%;
+      font-size: 19px;
+    }
   }
 `
 
 export default function Home() {
   return (
     <Layout>
-      <StyledContainer>
-        <SmallerContainer>
-          <h2>Hey! I'm Soujanya Nekkanti</h2>
+      <UserWrapper>
+        <UserTitle>
+          Hey! I'm Soujanya <span>Nekkanti</span>
+        </UserTitle>
+        <UserDescription>
+          <div>
+            <h4>Welcome to my portfolio!</h4>
+            <p>
+              I am a front end developer, scrum master, digital artist and a
+              food lover. An Indian based in Stockholm.
+            </p>
 
-          <p>
-            My Full name is Lakshmi Sowjanya Nekkanti, also know as Soujanya or
-            Lakshmi
-            <br />
-            A Software Engineer and a Web Developer. An Indian residing in
-            Stockholm currently.
-            <br /> I love to add value to society by crafting software using
-            JavaScript tools, I started building this website out of my interest
-            to start my open source journey..
-          </p>
-
-          <StyledFlex>
-            <Button href="/" rel="noopener noreferrer" target="_blank">
-              View resume
-            </Button>
-            <Button as={Link} to="/contact">
-              Get In Touch
-            </Button>
-          </StyledFlex>
-        </SmallerContainer>
-      </StyledContainer>
-      <SmallerContainer>
-        <h3>The website is still under construction</h3>
-      </SmallerContainer>
+            <StyledFlex>
+              <Button
+                href="https://github.com/soujanya-nekkenti/building-website-gatsby/raw/master/RESUME.pdf"
+                download
+                title="Resume"
+              >
+                Download Resume
+              </Button>
+              <Button as={Link} to="/contact">
+                Get In Touch
+              </Button>
+            </StyledFlex>
+          </div>
+          <img src={MySelfIcon} alt="my self" />
+        </UserDescription>
+      </UserWrapper>
     </Layout>
   )
 }
