@@ -12,7 +12,7 @@ const StyledContainer = styled.footer`
 `
 
 const StyledSocial = styled.div`
-  color: #a8b2d1;
+  color: #8a0040;
   width: 100%;
   max-width: 500px;
   margin: 0 auto 10px;
@@ -27,7 +27,7 @@ const StyledSocialLink = styled.a`
 `
 
 const Author = styled.div`
-  color: #a8b2d1;
+  color: #8a0040;
   font-style: italic;
   line-height: 2;
 `

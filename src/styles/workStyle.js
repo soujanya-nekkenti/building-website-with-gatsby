@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const ExperienceWrapper = styled.div`
   align-items: flex-start;
   display: flex;
-  padding: 5% 0;
+  padding: 5% 5%;
   margin-left: 30px;
   @media (max-width: 700px) {
     flex-direction: column;
@@ -14,9 +14,9 @@ export const WorkWrapper = styled.div`
   margin-right: 8%;
   h1 {
     font-weight: 300;
-    padding-bottom: 35px;
-    margin-bottom: 35px;
-    border-bottom: solid 1px #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #8a0040;
   }
   @media (max-width: 700px) {
     margin-right: 0;
@@ -26,9 +26,9 @@ export const EdWrapper = styled.div`
   flex: 1;
   h1 {
     font-weight: 300;
-    padding-bottom: 35px;
-    margin-bottom: 35px;
-    border-bottom: solid 1px #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #8a0040;
   }
   @media (max-width: 700px) {
     margin: 40px 0;
@@ -59,6 +59,7 @@ export const StepperHead = styled.div`
   a {
     font-size: 23px;
     font-weight: 300;
+    color: #8a0040;
     text-decoration: none;
   }
   @media (max-width: 700px) {

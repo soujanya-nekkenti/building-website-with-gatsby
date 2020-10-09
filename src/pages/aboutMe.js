@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout.js"
-import image from "../images/image.png"
+import image from "../images/myimage.png"
 import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components"
 
@@ -124,8 +124,8 @@ export default () => {
               <Image
                 src={image}
                 alt="just me chilling"
-                width="200px"
-                height="207px"
+                width="400px"
+                height="350px"
               />
             </Portrait>
             <Details />
