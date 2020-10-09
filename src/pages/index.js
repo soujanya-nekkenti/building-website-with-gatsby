@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import MySelfIcon from "../images/girled.png"
+import MySelfIcon from "../images/icon.png"
 import Layout from "../components/layout.js"
 import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components"
@@ -45,7 +45,8 @@ const StyledFlex = styled.div`
 `
 
 export const UserWrapper = styled.div`
-  margin: 8% auto;
+  margin-top: 8%;
+  margin-bottom: 0;
   padding: 0 8%;
 `
 
@@ -65,7 +66,6 @@ export const UserDescription = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-bottom: 10%;
   margin-top: 4%;
   h4 {
     color: #8a0040;

@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
-import SocialIcons from "../icons/socialIcons"
 
 export const ContactWrapper = styled.div`
   margin: 10% auto;
