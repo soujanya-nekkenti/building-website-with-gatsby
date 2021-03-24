@@ -2,10 +2,9 @@ import React from "react"
 import Header from "./header.js"
 import Footer from "./footer.js"
 import styled from "styled-components"
-import pinkBg from "../images/pink-bg.png"
 
 const Wrapper = styled.div`
-  background-image: url(${pinkBg});
+  background: #27496d;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,13 +19,11 @@ const Wrapper = styled.div`
 `
 function Layout({ children }) {
   return (
-    <div>
-      <Wrapper>
-        <Header />
-        {children}
-        <Footer />
-      </Wrapper>
-    </div>
+    <Wrapper>
+      <Header />
+      {children}
+      <Footer />
+    </Wrapper>
   )
 }
 export default Layout

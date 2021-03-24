@@ -5,19 +5,26 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
+  margin-left: 24px;
   @media (max-width: 960px) {
     max-width: 100%;
     margin-bottom: 1rem;
+    margin-left: 0;
+    margin-top: 24px;
   }
 `
 
 const Image = styled.img`
-  margin-right: 0.6rem;
+  display: block;
+  margin: 0 auto;
 `
 
 const Text = styled.p`
-  color: ##000000;
-  lineheight: 1;
+  color: #fbfffe;
+
+  a {
+    color: #fcd1d1;
+  }
 `
 
 const Flex = styled.div`
@@ -27,13 +34,7 @@ const Flex = styled.div`
   }
 `
 
-const Portrait = styled.div`
-  float: left;
-  @media (max-width: 960px) {
-    max-width: 100%;
-  }
-`
-
+const Portrait = styled.div``
 const Container = styled.div`
   max-width: 1280px;
   margin: 0 auto;
@@ -42,7 +43,6 @@ const Container = styled.div`
     width: 90%;
   }
   @media (min-width: 993px) {
-    width: 80%;
   }
 `
 
@@ -53,57 +53,38 @@ const PageTitle = styled.h1`
   @media (max-width: 960px) {
     text-align: center;
   }
-  color: black;
+  color: #fbfffe;
 `
 
 const Details = () => {
   return (
-    <Wrapper as={Container} width="100%" maxWidth="48%">
-      <Text lineHeight={1.6} color={"dark"}>
-        <div>
-          I’m Soujanya Nekkanti, a Software Enginer and Web Developer. I'm
-          really interested in Technology & solving technical problems. You can
-          know more about me by reading my articles.
-        </div>
+    <Wrapper width="100%" maxWidth="48%">
+      <Text>
+        I’m Soujanya Nekkanti, a Software Enginer and Web Developer. I'm really
+        interested in Technology & solving technical problems. You can know more
+        about me by reading my articles.
       </Text>
-      <Text
-        lineHeight={1.6}
-        color={"dark"}
-        dangerouslySetInnerHTML={{
-          __html:
-            "Currently working as Frontend Developer and Scrum Master at ATG",
-        }}
-      />
-
-      <Text lineHeight={1.6} color={"dark"}>
-        <div>
-          Highly motivated, passionate and creative software professional with
-          experience on end-to-end software development and web application
-          designing, possessing a set of frontend programming skills and
-          knowledge of various tools and frameworks with a fierce passion of
-          user experience and software integration.
-        </div>
+      <Text>
+        Highly motivated, passionate and creative software professional with
+        experience on end-to-end software development and web application
+        designing, possessing a set of frontend programming skills and knowledge
+        of various tools and frameworks with a fierce passion of user experience
+        and software integration.
       </Text>
-      <Text lineHeight={1.6} color={"dark"}>
-        <div>
-          Around 2.5 years of professional experience working with programming
-          languages like Javascript, HTML, CSS, and frameworks like React JS,
-          React Native as a front-end developer. Education: Master of Science in
-          Software Engineering Bachelor of Technology in Computer Science
-          Engineering.
-        </div>
+      <Text>
+        Around 4 years of professional experience working with programming
+        languages like Javascript, HTML, CSS, and frameworks like React JS,
+        React Native as a front-end developer. A certified Scrum Master with
+        good experience working with agile processes.
       </Text>
-      <Text lineHeight={1.6} color={"dark"}>
-        <div>
-          A certified Scrum Master with good experience working with agile
-          processes. As a person, I strive to be the best at whatever I do.
-          Commited to quality and customer satisfaction with outstanding
-          verbal/written skills and attention to detail.
-        </div>
+      <Text>
+        As a person, I strive to be the best at whatever I do. Commited to
+        quality and customer satisfaction with outstanding verbal/written skills
+        and attention to detail.
       </Text>
-      <Text lineHeight={1.6} color={"dark"}>
-        For business inquiries feel free to get in touch with:
-        <a href="mailto: soujanya.nekkenti@gmail.com"> Send an e-mail</a>
+      <Text>
+        For business inquiries feel free to
+        <a href="mailto: soujanya.nekkenti@gmail.com"> GET IN TOUCH</a>
       </Text>
     </Wrapper>
   )

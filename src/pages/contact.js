@@ -10,14 +10,14 @@ export const ContactWrapper = styled.div`
 `
 export const ContactHeader = styled.h1`
   text-align: CENTER;
-  color: #8a0040;
+  color: #fbfffe;
   margin-bottom: 5%;
   font-weight: 300;
 `
 export const ContactDetails = styled.div`
   display: block;
   margin: auto;
-  border: 3px solid #8a0040;
+  border: 3px solid #272343;
   padding: 10px;
   width: 500px;
   height: 350px;
@@ -25,7 +25,7 @@ export const ContactDetails = styled.div`
 
   h3 {
     font-size: 30px;
-    color: #8a0040;
+    color: #272343;
     font-weight: 300;
   }
   @media (max-width: 700px) {
@@ -44,7 +44,7 @@ export const ContactBox = styled.div`
   }
   span,
   div {
-    color: #fe81bb;
+    color: #27496d;
   }
 `
 export const OnlineBox = styled.div`
@@ -57,7 +57,7 @@ export const OnlineBox = styled.div`
     flex-direction: column;
   }
   span {
-    color: #fe81bb;
+    color: #27496d;
   }
   div {
     flex-direction: row;

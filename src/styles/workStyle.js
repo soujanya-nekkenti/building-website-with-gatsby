@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const ExperienceWrapper = styled.div`
   align-items: flex-start;
+  color: #fbfffe;
   display: flex;
   padding: 5% 5%;
   margin-left: 30px;
@@ -16,7 +17,7 @@ export const WorkWrapper = styled.div`
     font-weight: 300;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    border-bottom: solid 1px #8a0040;
+    border-bottom: solid 1px #fcd1d1;
   }
   @media (max-width: 700px) {
     margin-right: 0;
@@ -28,7 +29,7 @@ export const EdWrapper = styled.div`
     font-weight: 300;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    border-bottom: solid 1px #8a0040;
+    border-bottom: solid 1px #fcd1d1;
   }
   @media (max-width: 700px) {
     margin: 40px 0;
@@ -59,7 +60,7 @@ export const StepperHead = styled.div`
   a {
     font-size: 23px;
     font-weight: 300;
-    color: #8a0040;
+    color: #fcd1d1;
     text-decoration: none;
   }
   @media (max-width: 700px) {
@@ -70,7 +71,8 @@ export const StepperHead = styled.div`
 export const LogoLink = styled.a`
   display: block;
   img {
-    padding: 2%;
+    width: 64px;
+    height: 64px;
     display: flex;
   }
 `

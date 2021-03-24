@@ -6,12 +6,11 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components"
 
 const Button = styled.a`
-  color: #fff;
+  color: #272343;
   text-decoration: none;
   padding: 0.9rem 1.4rem;
-  background: #fe81bb;
+  background: #fcd1d1;
   border-radius: 0.3rem;
-  box-shadow: rgba(168, 178, 209) 0px 13px 19px -6px;
   transition: 0.5s;
   @media (max-width: 380px) {
     width: 80%;
@@ -19,16 +18,16 @@ const Button = styled.a`
     text-align: center;
   }
   &:hover {
-    box-shadow: 0px 0px 17px 0px rgba(0, 196, 255, 0.36);
-    transition: 0.5s;
+    color: #272343;
+    background: #fbfffe;
   }
   &:first-child {
     margin-right: 1rem;
-    background: #f9f9f9;
-    color: #fe81bb;
-    box-shadow: rgb(185, 185, 185) 0px 13px 19px -6px;
+    background: #fbfffe;
+    color: #272343;
     &:hover {
-      box-shadow: 0px 0px 17px 0px rgba(0, 196, 255, 0.36);
+      color: #272343;
+      background: #fcd1d1;
     }
     @media (max-width: 380px) {
       margin: 0 auto 1.5rem auto;
@@ -45,7 +44,7 @@ const StyledFlex = styled.div`
 `
 
 export const UserWrapper = styled.div`
-  margin-top: 8%;
+  margin-top: 6%;
   margin-bottom: 0;
   padding: 0 8%;
 `
@@ -53,9 +52,9 @@ export const UserWrapper = styled.div`
 export const UserTitle = styled.h1`
   font-size: 4.2em;
   font-weight: bold;
-  color: #8a0040;
+  color: #fbfffe;
   span {
-    color: #fe81bb;
+    color: #fcd1d1;
   }
   @media (max-width: 700px) {
     font-size: 2em;
@@ -68,12 +67,12 @@ export const UserDescription = styled.div`
   justify-content: space-evenly;
   margin-top: 4%;
   h4 {
-    color: #8a0040;
+    color: #fbfffe;
     font-weight: bold;
     font-size: 26px;
   }
   p {
-    color: #fe81bb;
+    color: #fbfffe;
     max-width: 90%;
     font-weight: 300;
     font-size: 24px;
@@ -81,12 +80,17 @@ export const UserDescription = styled.div`
     margin-bottom: 15%;
   }
   img {
-    max-width: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -40px;
   }
   @media (max-width: 700px) {
     flex-direction: column-reverse;
     img {
-      max-width: 100%;
+      width: 300px;
+      height: 300px;
+      margin-top: 0px;
+      margin-bottom: -50px;
     }
     p {
       max-width: 100%;
@@ -112,7 +116,7 @@ export default function Home() {
 
             <StyledFlex>
               <Button
-                href="https://github.com/soujanya-nekkenti/building-website-gatsby/raw/master/RESUME.pdf"
+                href="https://github.com/soujanya-nekkenti/building-website-with-gatsby/blob/master/RESUME.pdf"
                 download
                 title="Resume"
               >
