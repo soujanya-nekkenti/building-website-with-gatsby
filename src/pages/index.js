@@ -46,7 +46,6 @@ const StyledFlex = styled.div`
 `
 
 export const UserWrapper = styled.div`
-  margin-top: 6%;
   margin-bottom: 0;
   padding: 0 8%;
 `
@@ -58,7 +57,12 @@ export const UserTitle = styled.h1`
   span {
     color: #fcd1d1;
   }
-  @media (max-width: 700px) {
+
+  @media only screen and (min-width: 600px) and (max-width: 992px) {
+    font-size: 3.5em;
+  }
+
+  @media only screen and (max-width: 600px) {
     font-size: 2em;
   }
 `
@@ -86,8 +90,21 @@ export const UserDescription = styled.div`
     height: 500px;
     margin-top: -40px;
   }
-  @media (max-width: 700px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: column-reverse;
+    img {
+      width: 300px;
+      height: 300px;
+      margin-top: 0px;
+      margin-bottom: -50px;
+    }
+    p {
+      max-width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 992px) {
     img {
       width: 300px;
       height: 300px;

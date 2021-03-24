@@ -4,7 +4,7 @@ export const ExperienceWrapper = styled.div`
   align-items: flex-start;
   color: #fbfffe;
   display: flex;
-  padding: 5% 5%;
+  padding: 0 5% 0 5%;
   margin-left: 30px;
   @media (max-width: 700px) {
     flex-direction: column;

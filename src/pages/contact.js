@@ -5,7 +5,7 @@ import styled from "styled-components"
 export const ContactWrapper = styled.div`
   margin: 10% auto;
   @media (max-width: 700px) {
-    margin: 15% auto;
+    margin: 25% auto;
   }
 `
 export const ContactHeader = styled.h1`
@@ -13,12 +13,16 @@ export const ContactHeader = styled.h1`
   color: #fbfffe;
   margin-bottom: 1%;
   font-weight: 300;
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 12px;
+  }
 `
 export const ContactDetails = styled.div`
   display: block;
   margin: auto;
   padding: 10px;
   width: 500px;
+
   height: 350px;
 
   h3 {
@@ -26,9 +30,11 @@ export const ContactDetails = styled.div`
     color: #272343;
     font-weight: 300;
   }
-  @media (max-width: 700px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
     align-items: center;
+    width: 250px;
+    padding: 0px;
   }
 `
 export const ContactBox = styled.div`
@@ -71,6 +77,10 @@ const Button = styled.a`
     background: #fbfffe;
     text-decoration: none;
   }
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 42px;
+  }
 `
 
 const Contact = () => (
@@ -91,33 +101,6 @@ const Contact = () => (
             Say Hello!!
           </Button>
         </ContactBox>
-        {/* <OnlineBox>
-          <h3>Connect with me online:</h3>
-          <div>
-            {" "}
-            <a
-              href="https://github.com/soujanya-nekkenti"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>GitHub</span>
-            </a>
-            <a
-              href="https://twitter.com/soujanya1604"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>Twitter</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/lakshmisowjanyanekkanti1604/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>LinkedIn</span>
-            </a>
-          </div>
-        </OnlineBox> */}
       </ContactDetails>
     </ContactWrapper>
   </Layout>

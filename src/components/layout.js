@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "./header.js"
+import HeaderBar from "./header.js"
 import Footer from "./footer.js"
 import styled from "styled-components"
 
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 function Layout({ children }) {
   return (
     <Wrapper>
-      <Header />
+      <HeaderBar />
       {children}
       <Footer />
     </Wrapper>

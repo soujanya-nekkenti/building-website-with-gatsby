@@ -17,6 +17,10 @@ const Wrapper = styled.div`
 const Image = styled.img`
   display: block;
   margin: 0 auto;
+  @media only screen and (max-width: 600px) {
+    width: 200px;
+    height: 180px;
+  }
 `
 
 const Text = styled.p`
@@ -39,10 +43,11 @@ const Container = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   width: 90%;
-  @media (min-width: 601px) {
-    width: 90%;
+  @media only screen and (max-width: 600px) {
+    margin-top: -50px;
   }
-  @media (min-width: 993px) {
+  @media only screen and (min-width: 600px) and (max-width: 992px) {
+    margin-top: -50px;
   }
 `
 
@@ -82,7 +87,6 @@ const Details = () => {
         quality and customer satisfaction with outstanding verbal/written skills
         and attention to detail.
       </Text>
-     
     </Wrapper>
   )
 }
