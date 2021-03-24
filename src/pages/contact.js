@@ -11,17 +11,15 @@ export const ContactWrapper = styled.div`
 export const ContactHeader = styled.h1`
   text-align: CENTER;
   color: #fbfffe;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   font-weight: 300;
 `
 export const ContactDetails = styled.div`
   display: block;
   margin: auto;
-  border: 3px solid #272343;
   padding: 10px;
   width: 500px;
   height: 350px;
-  background: #ffff;
 
   h3 {
     font-size: 30px;
@@ -34,37 +32,44 @@ export const ContactDetails = styled.div`
   }
 `
 export const ContactBox = styled.div`
-  padding-top: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-weight: bold;
-  @media (max-width: 700px) {
-    flex-direction: column;
-  }
-  span,
-  div {
-    color: #27496d;
-  }
-`
-export const OnlineBox = styled.div`
-  padding-top: 50px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-weight: bold;
   @media (max-width: 700px) {
     flex-direction: column;
   }
   span {
     color: #27496d;
   }
-  div {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+`
+
+const Text = styled.div`
+  color: #fbfffe;
+
   a {
-    padding: 10px;
+    color: #fcd1d1;
+  }
+`
+
+const Button = styled.a`
+  color: #272343;
+  text-decoration: none;
+  padding: 0.9rem 1.4rem;
+  background: #fcd1d1;
+  border-radius: 0.3rem;
+  transition: 0.5s;
+  margin-top: 24px;
+  font-weight: bold;
+  @media (max-width: 380px) {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &:hover {
+    color: #272343;
+    background: #fbfffe;
+    text-decoration: none;
   }
 `
 
@@ -74,10 +79,19 @@ const Contact = () => (
       <ContactHeader>Get in touch</ContactHeader>
       <ContactDetails>
         <ContactBox>
-          <h3>Email me at:</h3>
-          <div>soujanya.nekkenti@gmail.com</div>
+          <Text>
+            Although I'm not currently looking for any new opportunities, my
+            inbox is always open. Whether you have a question or just want to
+            say hi, I'll try my best to get back to you!
+          </Text>
+          <Button
+            href="mailto: soujanya.nekkenti@gmail.com"
+            title="Say Hello!!"
+          >
+            Say Hello!!
+          </Button>
         </ContactBox>
-        <OnlineBox>
+        {/* <OnlineBox>
           <h3>Connect with me online:</h3>
           <div>
             {" "}
@@ -103,7 +117,7 @@ const Contact = () => (
               <span>LinkedIn</span>
             </a>
           </div>
-        </OnlineBox>
+        </OnlineBox> */}
       </ContactDetails>
     </ContactWrapper>
   </Layout>

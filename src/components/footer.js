@@ -11,11 +11,10 @@ const DummyFooter = styled.div`
 `
 
 const StyledContainer = styled.footer`
-  backgroundcolor: #27496d;
-  oopacity: 0.6;
-  textalign: center;
+  background-color: #27496d;
+  text-align: center;
   position: fixed;
-  paddingtop: 20px;
+  padding-top: 20px;
   left: 0;
   bottom: 0;
   width: 100%;

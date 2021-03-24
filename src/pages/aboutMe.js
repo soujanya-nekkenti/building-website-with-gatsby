@@ -82,10 +82,7 @@ const Details = () => {
         quality and customer satisfaction with outstanding verbal/written skills
         and attention to detail.
       </Text>
-      <Text>
-        For business inquiries feel free to
-        <a href="mailto: soujanya.nekkenti@gmail.com"> GET IN TOUCH</a>
-      </Text>
+     
     </Wrapper>
   )
 }

@@ -20,6 +20,7 @@ const Button = styled.a`
   &:hover {
     color: #272343;
     background: #fbfffe;
+    text-decoration: none;
   }
   &:first-child {
     margin-right: 1rem;
@@ -28,6 +29,7 @@ const Button = styled.a`
     &:hover {
       color: #272343;
       background: #fcd1d1;
+      text-decoration: none;
     }
     @media (max-width: 380px) {
       margin: 0 auto 1.5rem auto;
