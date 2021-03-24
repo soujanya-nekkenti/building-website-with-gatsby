@@ -1,0 +1,36 @@
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    #wrapper{
+        width: 100%
+    }
+
+    #timeline-desktop{
+        display: none !important;
+    }
+
+    .line{
+    left: 28px;
+    bottom: 0;
+    top: 70px;
+    }
+  }
+
+/* Tablet */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #timeline-item{
+      width: 80% !important;
+    }
+
+    #timeline-mobile{
+        display: none !important;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+    #timeline-mobile{
+        display: none !important;
+    }
+  
+}
+

@@ -12,8 +12,7 @@ export default [
     location: "Stockholm",
     logo: atglogo,
     companyLink: "https://www.atg.se",
-    description:
-      "<p>Scrum master for the trainee innovation project at ATG.</p>",
+    description: "Scrum master for the trainee innovation project at ATG.",
   },
   {
     id: 4,
@@ -24,7 +23,7 @@ export default [
     logo: atglogo,
     companyLink: "https://www.atg.se",
     description:
-      "<p>Currently working with front-end technologies like React.js framework and Redux along with Javascript, HTML, and CSS to improve the web application of atg.se. As a gaming company, holding different game aspects like Horse, Sports and Casino on a single platform is main key. I am part of team that uses latest technologies in frontend to improve new user-facing features and build reusable code and libraries for future use.</p> <p><ul><li>Ensure the technical feasibility of UI/UX designs.</li> <li>Optimize application for maximum speed and scalability.</li> <li> Follows agile principles and work in a scrum team</li></ul>",
+      "Working as a web developer, where the main stack includes React,Redux, Redux-saga, Emotion, StoryBook, Typescript.",
   },
   {
     id: 3,
@@ -35,7 +34,7 @@ export default [
     logo: qlirologo,
     companyLink: "https://qliro.com",
     description:
-      "<p>Role: Frontend Developer (Mostly), Tester (partial involvement)</p> <p>The work includes creating a new version of an application using React framework.Front end development is done using JavaScript6 (ECMA Script 6), React JS, Redux, ES. It also includes unit testing of entire front-end. I also took part in prototyping the UI/UX interface for the website.</p>  <p> As a tester, I helped the team in identifying the bugs during regression testing, documenting them and creating tickets in Jira to track them. Partially played the role as tester during critical situations. Learned using tools like Soap UI to generate data for testing and writing test cases.</p>",
+      "Worked as software developer to build sales management web application using JavaScript6 (ECMA Script 6), React JS, Redux, Prototyping the UI/UX interface for the website and writing tests",
   },
   {
     id: 2,
@@ -46,7 +45,7 @@ export default [
     logo: softhouselogo,
     companyLink: "https://www.softhouse.com",
     description:
-      "<p>Working with both frontend and backend development. The work includes creation of a web application, Online Examinations. The admin of the website,should be able create new exams and assign them to the users. The users should be able to read the examinations, select one of them and answer them. <p>The technologies being used:<ul><li>Front end: JavaScript, Angular JS, Bootstrap, HTML and CSS</li> <li>Backend: Java</li> <li>Database: H2</li> <li>IDE’s: Web Strom and Intelli J IDEA</li>",
+      " Worked as an industrial Trainee for developing an Online Examination portal using JavaScript, Bootstrap, AngularJs.",
   },
   {
     id: 1,
@@ -57,6 +56,6 @@ export default [
     logo: reginlogo,
     companyLink: "https://www.caterpillar.com",
     description:
-      "<p>Automated Regression tests for “Embedded views in EXOscada” with Ranorex. Learning to know EXO system and Ranorex tool</p>",
+      " Worked as intern to create Automated Regression tests for “Embedded views in EXOscada” with Ranorex tool.",
   },
 ]

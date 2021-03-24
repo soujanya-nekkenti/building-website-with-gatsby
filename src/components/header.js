@@ -41,8 +41,11 @@ function Header() {
                   <Nav.Link id="nav-links-laptop" href="/aboutMe">
                     About Me
                   </Nav.Link>
-                  <Nav.Link id="nav-links-laptop" href="/experience">
+                  <Nav.Link id="nav-links-laptop" href="/experiences">
                     Experience
+                  </Nav.Link>
+                  <Nav.Link id="nav-links-laptop" href="/education">
+                    Education & Skills
                   </Nav.Link>
                   <Nav.Link id="nav-links-laptop" href="/contact">
                     Contact
@@ -65,7 +68,10 @@ function Header() {
                   className="header-dropdown-tablet"
                 >
                   <Dropdown.Item href="/aboutMe">About Me</Dropdown.Item>
-                  <Dropdown.Item href="/experience">Experience</Dropdown.Item>
+                  <Dropdown.Item href="/experiences">Experience</Dropdown.Item>
+                  <Dropdown.Item href="/education">
+                    Education & Skills
+                  </Dropdown.Item>
                   <Dropdown.Item href="/contact">Contact</Dropdown.Item>
                 </DropdownButton>
               </Navbar>
@@ -84,7 +90,12 @@ function Header() {
                   title={<FiMenu size={30} />}
                 >
                   <Dropdown.Item href="/aboutMe">About Me</Dropdown.Item>
-                  <Dropdown.Item href="/experience">Experience</Dropdown.Item>
+                  <Dropdown.Item href="/experiences">Experience</Dropdown.Item>
+                  <Dropdown.Item href="/education">
+                    {" "}
+                    Education & Skills
+                  </Dropdown.Item>
+
                   <Dropdown.Item href="/contact">Contact</Dropdown.Item>
                 </DropdownButton>
               </Navbar>
