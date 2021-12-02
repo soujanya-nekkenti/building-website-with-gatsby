@@ -33,6 +33,7 @@ const Text = styled.p`
 
 const Flex = styled.div`
   display: flex;
+  align-items: center;
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -43,18 +44,14 @@ const Container = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   width: 90%;
-  @media only screen and (max-width: 600px) {
-    margin-top: -50px;
-  }
-  @media only screen and (min-width: 600px) and (max-width: 992px) {
-    margin-top: -50px;
-  }
+  height: 84vh;
 `
 
 const PageTitle = styled.h1`
-  margin-top: 2rem;
+  margin-top: 4rem;
+  padding: 24px;
   text-align: center;
-  margin-bottom: 2rem;
+  background-color: #fcd1d182;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -100,7 +97,7 @@ export default () => {
           <Flex
             display="flex"
             justifyContent="space-between"
-            alignItems="flex-start"
+            alignItems="center"
           >
             <Portrait width="100%" maxWidth="48%">
               <Image

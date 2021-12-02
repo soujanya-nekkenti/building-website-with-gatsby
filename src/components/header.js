@@ -8,6 +8,11 @@ import DropdownButton from "react-bootstrap/DropdownButton"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/header.css"
 import { FiMenu } from "react-icons/fi"
+import styled from "styled-components"
+
+const StyledHeader = styled.div`
+  height: 8vh;
+`
 
 function Header() {
   return (
@@ -26,7 +31,7 @@ function Header() {
         }
       `}
       render={data => (
-        <div>
+        <StyledHeader>
           {data.allSite.edges.map(({ node }) => (
             <Row className="padding">
               <Navbar
@@ -101,7 +106,7 @@ function Header() {
               </Navbar>
             </Row>
           ))}
-        </div>
+        </StyledHeader>
       )}
     />
   )

@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import MySelfIcon from "../images/icon.png"
 import Layout from "../components/layout.js"
 import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components"
+import codeImage from "../images/codeImage.jpg"
 
 const Button = styled.a`
   color: #272343;
@@ -40,20 +40,20 @@ const Button = styled.a`
 const StyledFlex = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-top: 20px;
   @media (max-width: 380px) {
     flex-direction: column;
   }
 `
 
-export const UserWrapper = styled.div`
-  margin-bottom: 0;
-  padding: 0 8%;
-`
 
-export const UserTitle = styled.h1`
+export const UserTitle = styled.div`
   font-size: 4.2em;
   font-weight: bold;
-  color: #fbfffe;
+  text-align: center;
+  color: #ffffff !important;
+  padding-top: 124px;
   span {
     color: #fcd1d1;
   }
@@ -67,37 +67,35 @@ export const UserTitle = styled.h1`
   }
 `
 
+export const StyledImage = styled.div`
+  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1)), url(${codeImage});
+  height: 84vh;
+`;
+
+
 export const UserDescription = styled.div`
+
   display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  margin-top: 4%;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 24px;
+  
   h4 {
-    color: #fbfffe;
+    color: #ffffff;
     font-weight: bold;
     font-size: 26px;
+    text-align: center;
   }
   p {
-    color: #fbfffe;
+    color: #ffffff;
     max-width: 90%;
     font-weight: 300;
     font-size: 24px;
     line-height: 1.3;
-    margin-bottom: 15%;
+    
   }
-  img {
-    width: 500px;
-    height: 500px;
-    margin-top: -40px;
-  }
+
   @media only screen and (max-width: 600px) {
-    flex-direction: column-reverse;
-    img {
-      width: 300px;
-      height: 300px;
-      margin-top: 0px;
-      margin-bottom: -50px;
-    }
     p {
       max-width: 100%;
       font-size: 16px;
@@ -121,19 +119,15 @@ export const UserDescription = styled.div`
 export default function Home() {
   return (
     <Layout>
-      <UserWrapper>
+      <StyledImage>
         <UserTitle>
           Hey! I'm Soujanya <span>Nekkanti</span>
         </UserTitle>
         <UserDescription>
-          <div>
-            <h4>Welcome to my portfolio!</h4>
-            <p>
-              I am a front end developer, scrum master, digital artist and a
-              food lover. An Indian based in Stockholm.
-            </p>
-
-            <StyledFlex>
+          <h4>
+            I love to design and build user interfaces. 
+          </h4>
+          <StyledFlex>
               <Button
                 href="https://github.com/soujanya-nekkenti/building-website-with-gatsby/blob/master/RESUME.pdf"
                 download
@@ -144,11 +138,9 @@ export default function Home() {
               <Button as={Link} to="/contact">
                 Get In Touch
               </Button>
-            </StyledFlex>
-          </div>
-          <img src={MySelfIcon} alt="my self" />
-        </UserDescription>
-      </UserWrapper>
+          </StyledFlex>
+        </UserDescription> 
+        </StyledImage>
     </Layout>
   )
 }

@@ -11,7 +11,7 @@ const DummyFooter = styled.div`
 `
 
 const StyledContainer = styled.footer`
-  background-color: #27496d;
+  background-color: #4a4243;
   text-align: center;
   position: fixed;
   padding-top: 20px;
@@ -21,7 +21,7 @@ const StyledContainer = styled.footer`
 `
 
 const StyledSocial = styled.div`
-  color: #272343;
+  color: #ffffff85;
   width: 100%;
   max-width: 500px;
   margin: 0 auto 10px;
@@ -36,9 +36,15 @@ const StyledSocialLink = styled.a`
 `
 
 const Author = styled.div`
-  color: #272343;
+  color: #ffffff85;
   font-style: italic;
   line-height: 2;
+`
+
+
+
+const StyledFooter = styled.div`
+  height: 8vh;
 `
 
 function Footer() {
@@ -61,7 +67,7 @@ function Footer() {
         }
       `}
       render={data => (
-        <div>
+        <StyledFooter>
           <DummyFooter />
           <StyledContainer>
             {data.allSite.edges.map(({ node }) => (
@@ -93,7 +99,7 @@ function Footer() {
               </StyledSocial>
             ))}
           </StyledContainer>
-        </div>
+        </StyledFooter>
       )}
     />
   )

@@ -3,20 +3,18 @@ import HeaderBar from "./header.js"
 import Footer from "./footer.js"
 import styled from "styled-components"
 
+
 const Wrapper = styled.div`
-  background: #27496d;
+  background: #6a6465;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 100vh;
-  height: auto;
-  background-position: bottom;
-  position: relative;
+  height: 84vh;
   @media (max-width: 700px) {
     min-height: 100vh;
     height: auto;
   }
 `
+
 function Layout({ children }) {
   return (
     <Wrapper>
