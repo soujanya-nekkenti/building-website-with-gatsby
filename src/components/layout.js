@@ -8,7 +8,6 @@ const Wrapper = styled.div`
   background: #6a6465;
   width: 100%;
   min-height: 100vh;
-  height: 84vh;
   @media (max-width: 700px) {
     min-height: 100vh;
     height: auto;

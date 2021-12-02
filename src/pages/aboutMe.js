@@ -44,7 +44,6 @@ const Container = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   width: 90%;
-  height: 84vh;
 `
 
 const PageTitle = styled.h1`
