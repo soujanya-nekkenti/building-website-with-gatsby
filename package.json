@@ -19,7 +19,7 @@
     "@material-ui/lab": "^4.0.0-alpha.57",
     "babel-plugin-styled-components": "^1.10.7",
     "bootstrap": "^4.5.0",
-    "gatsby": "^2.24.72",
+    "gatsby": "^5.10.0",
     "gatsby-cli": "^2.12.106",
     "gatsby-plugin-styled-components": "^3.3.10",
     "node-fetch": "^2.6.1",
