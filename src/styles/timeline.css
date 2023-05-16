@@ -4,11 +4,10 @@ a {
 h1 {
 	text-align: center;
 	margin: 30px 0;
-	color: #fbfffe;
 }
 
 .date{
-    color: white;
+	color: #000000;
 }
 
 .main-timeline {
@@ -61,13 +60,14 @@ h1 {
 	top: 50%;
 	left: 30%;
 	transform: translateY(-50%);
+	background: #fff;
 }
 .main-timeline .timeline-icon i {
 	display: block;
 	border-radius: 50%;
 	background: #ec496e;
 	font-size: 64px;
-	color: #fff;
+	color: #000000;
 	line-height: 100px;
 	z-index: 1;
 	position: relative;
@@ -86,7 +86,7 @@ h1 {
 .main-timeline .timeline-icon:after {
 	width: 70px;
 	height: 50px;
-	background: #fff;
+	color: #000000;
 	top: 89px;
 	right: -30px;
 }
@@ -127,10 +127,19 @@ h1 {
 .main-timeline .description {
 	display: inline-block;
 	font-size: 16px;
-	color: #fbfffe;
+	color: #000000;
 	line-height: 20px;
 	letter-spacing: 1px;
-	margin: 0;
+	margin: 1;
+}
+
+.main-timeline .skills {
+	display: inline-block;
+	font-size: 16px;
+	font-style: italic;
+	color: #373434;
+	line-height: 20px;
+	margin: 2;
 }
 .main-timeline .timeline:nth-child(even) .timeline-icon {
 	left: auto;

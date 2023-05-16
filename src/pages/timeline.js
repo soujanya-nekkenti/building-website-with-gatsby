@@ -3,83 +3,83 @@ import Layout from "../components/layout"
 import "../styles/timeline.css"
 import atglogo from "../images/logos/atg-logo.png"
 import qlirologo from "../images/logos/qliro-logo.png"
-import reginlogo from "../images/logos/regin-logo.png"
+import hmlogo from "../images/logos/hm-logo.png"
 import softhouselogo from "../images/logos/softhouse-logo.png"
 
-const TimeLine = () => (
-  <Layout>
-    <div class="container">
-      <h1>Work Experience</h1>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="main-timeline">
-            <div class="timeline">
-              <img src={atglogo} alt="company" class="timeline-icon" />
-              <div class="timeline-content">
-                <h3 class="title">Web Developer, ATG</h3>
-                <h6 class="date"> May 2018 - present</h6>
-                <p class="description">
-                  Working as a frontend developer, where the main stack includes
-                  React, Redux, Redux-saga, Emotion,Flow, StoryBook, Typescript.
-                  Involved in building micro-services for the frontend.
-                </p>
-              </div>
-            </div>
-            <div class="timeline">
-              <img src={softhouselogo} alt="company" class="timeline-icon" />
-              <div class="timeline-content">
-                <h3 class="title">Scrum Master, ATG</h3>
-                <h6 class="date"> Sept 2020 - present</h6>
-                <p class="description">
-                  Served as a scrum master to the Trainee Team. Lead daily
-                  stand-ups and scrum ceremonies. Work with product owners to
-                  groom the backlog and plan sprints. Track, escalate and remove
-                  impediments.
-                </p>
-              </div>
-            </div>
-            <div class="timeline">
-              <img src={qlirologo} alt="company" class="timeline-icon" />
-              <div class="timeline-content">
-                <h3 class="title">Software Developer, Qliro</h3>
-                <h6 class="date"> Jan 2017 - May 2018</h6>
-                <p class="description">
-                  Worked as software developer to build sales management web
-                  application using JavaScript6 (ECMA Script 6), React JS,
-                  Redux, Prototyping the UI/UX interface for the website and
-                  writing tests
-                </p>
-              </div>
-            </div>
-            <div href="/#" class="timeline">
-              <img src={softhouselogo} alt="company" class="timeline-icon" />
-              <div class="timeline-content">
-                <h3 class="title">Industrial Trainee, Softhouse Consulting</h3>
-                <h6 class="date"> Oct 2016 - Dec 2016</h6>
-                <p class="description">
-                  Developed an Online Examination portal using JavaScript,
-                  Bootstrap, AngularJs. Worked with Agile methodolgies liek
-                  Scrum.
-                </p>
-              </div>
-            </div>
-            <div class="timeline">
-              <img src={reginlogo} alt="company" class="timeline-icon" />
-              <div class="timeline-content">
-                <h3 class="title">Intern, Reign AB</h3>
-                <h6 class="date"> Feb 2016 - May 2016</h6>
-                <p class="description">
-                  Worked as test intern to create Automated Regression tests for
-                  “Embedded views in EXOscada” with Ranorex tool. Explored EXO
-                  system and Ranorex tool.
-                </p>
-              </div>
+const experiences = [
+  {
+    title: "Frontend Lead Developer",
+    company: "H&M Group Business Tech",
+    logo: hmlogo,
+    date: "May 2021 - Present",
+    description:
+      "Responsible in building a customized and intuitive web experience for the store administration in H&M. I partly play the role of aScrum Master, lead the frontend tech, and support team in all aspects like providing inputs for design.",
+    skills:
+      "React · Typescript · Mobx.js · Nodejs · Azure Cloud services · Git · Jira · Optimizely · E2E Automation (Playwright) · ESlint",
+  },
+  {
+    title: "System Developer (Frontend) & Scrum Master",
+    company: "AB Trav och Galopp (ATG)",
+    logo: atglogo,
+    date: "May 2018 - May 2021",
+    description:
+      "I have built and maintained web application of atg.se from developing new features to upgrading legacy code. Working on moving from mono repo to micro frontend architecture, Optimize application for maximum speed and scalability. Ensure the technical feasibility of UI/UX designs.",
+    skills:
+      "Git · Jira · Redux.js · TypeScript · React.js · Node.js · Micro frontend · A/B Testing",
+  },
+  {
+    title: "Software Engineer",
+    company: "Qliro AB",
+    logo: qlirologo,
+    date: "January 2017 - May 2018",
+    description: `Worked as software developer to build sales management web
+      application using JavaScript6 (ECMA Script 6), React JS,
+      Redux, Prototyping the UI/UX interface for the website and
+      writing tests`,
+    skills: "JavaScript6 (ECMA Script 6) · React JS · Redux · C#",
+  },
+
+  {
+    title: "Trainee, ",
+    company: "Softhouse ConsultingB",
+    logo: softhouselogo,
+    date: "Oct 2016 - Dec 2016",
+    description: ` Developed an Online Examination portal using JavaScript,
+    Bootstrap, AngularJs. Worked with Agile methodolgies liek
+    Scrum.`,
+    skills: "JavaScript · Bootstrap · Angular · Scrum",
+  },
+]
+
+const TimeLine = () => {
+  return (
+    <Layout>
+      <div class="container">
+        <h1>Work Experience</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="main-timeline">
+              {experiences.map((experience, index) => (
+                <div class="timeline">
+                  <img
+                    src={experience.logo}
+                    alt="company"
+                    class="timeline-icon"
+                  />
+                  <div class="timeline-content">
+                    <h3 class="title">{experience.title}</h3>
+                    <h6 class="date">{experience.date}</h6>
+                    <p class="description">{experience.description}</p>
+                    <p class="skills">{experience.skills}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default TimeLine

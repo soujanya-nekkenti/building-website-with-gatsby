@@ -3,9 +3,8 @@ import HeaderBar from "./header.js"
 import Footer from "./footer.js"
 import styled from "styled-components"
 
-
 const Wrapper = styled.div`
-  background: #6a6465;
+  background: #ddd0c8;
   width: 100%;
   min-height: 100vh;
   @media (max-width: 700px) {
