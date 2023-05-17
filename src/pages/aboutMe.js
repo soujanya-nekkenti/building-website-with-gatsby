@@ -24,7 +24,7 @@ const Image = styled.img`
 `
 
 const Text = styled.p`
-  color: #fbfffe;
+  color: #000000;
 
   a {
     color: #fcd1d1;
@@ -38,8 +38,6 @@ const Flex = styled.div`
     flex-direction: column;
   }
 `
-
-const Portrait = styled.div``
 const Container = styled.div`
   max-width: 1280px;
   margin: 0 auto;
@@ -50,20 +48,20 @@ const PageTitle = styled.h1`
   margin-top: 4rem;
   padding: 24px;
   text-align: center;
-  background-color: #fcd1d182;
+
   @media (max-width: 960px) {
     text-align: center;
   }
-  color: #fbfffe;
+  color: #000000;
 `
 
 const Details = () => {
   return (
     <Wrapper width="100%" maxWidth="48%">
       <Text>
-        I’m Soujanya Nekkanti, a Software Enginer and Web Developer. I'm really
-        interested in Technology & solving technical problems. You can know more
-        about me by reading my articles.
+        I’m Lakshmi Sowjanya Nekkanti, a Senior Software Engineer with focus on
+        frontend. I'm really interested in Technology & solving technical
+        problems. You can know more about me by reading my articles.
       </Text>
       <Text>
         Highly motivated, passionate and creative software professional with
@@ -73,10 +71,11 @@ const Details = () => {
         and software integration.
       </Text>
       <Text>
-        Around 4 years of professional experience working with programming
-        languages like Javascript, HTML, CSS, and frameworks like React JS,
-        React Native as a front-end developer. A certified Scrum Master with
-        good experience working with agile processes.
+        Around 6 years of professional experience working with tech stack like
+        React, Typescript, Nodejs, Nextjs, Styled Components, Storybook, Redux,
+        Mobx, React Hooks, Jest+React Testing Library, E2E(Playwright).
+        Experience working cloud services like Azure. A certified Scrum Master
+        with good experience working with agile processes.
       </Text>
       <Text>
         As a person, I strive to be the best at whatever I do. Commited to
@@ -98,14 +97,13 @@ export default () => {
             justifyContent="space-between"
             alignItems="center"
           >
-            <Portrait width="100%" maxWidth="48%">
-              <Image
-                src={image}
-                alt="just me chilling"
-                width="400px"
-                height="350px"
-              />
-            </Portrait>
+            <Image
+              src={image}
+              alt="just me chilling"
+              width="400px"
+              height="350px"
+            />
+
             <Details />
           </Flex>
           {/* <Socials /> */}

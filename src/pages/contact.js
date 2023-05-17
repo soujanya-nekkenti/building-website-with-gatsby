@@ -9,8 +9,7 @@ export const ContactWrapper = styled.div`
   }
 `
 export const ContactHeader = styled.h1`
-  text-align: CENTER;
-  color: #fbfffe;
+  text-align: center;
   margin-bottom: 1%;
   font-weight: 300;
   @media only screen and (max-width: 600px) {
@@ -50,8 +49,6 @@ export const ContactBox = styled.div`
 `
 
 const Text = styled.div`
-  color: #fbfffe;
-
   a {
     color: #fcd1d1;
   }

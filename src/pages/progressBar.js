@@ -30,19 +30,30 @@ export default function CustomizedProgressBars() {
   return (
     <div className={classes.root}>
       <Typography variant="body2" color="#fbfffe">
+        React
+      </Typography>
+      <BorderLinearProgress variant="determinate" value={90} />
+      <br />
+      <Typography variant="body2" color="#fbfffe">
+        Typescript
+      </Typography>
+      <BorderLinearProgress variant="determinate" value={70} />
+      <br />
+      <Typography variant="body2" color="#fbfffe">
         Javascript
       </Typography>
-      <BorderLinearProgress variant="determinate" value={80} />
+      <BorderLinearProgress variant="determinate" value={90} />
       <br />
       <Typography variant="body2" color="#fbfffe">
         HTML/CSS
       </Typography>
       <BorderLinearProgress variant="determinate" value={90} />
       <br />
+
       <Typography variant="body2" color="#fbfffe">
-        React JS
+        Node.js
       </Typography>
-      <BorderLinearProgress variant="determinate" value={70} />
+      <BorderLinearProgress variant="determinate" value={60} />
       <br />
       <Typography variant="body2" color="#fbfffe">
         Redux

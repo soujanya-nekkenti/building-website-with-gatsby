@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const ExperienceWrapper = styled.div`
   align-items: flex-start;
-  color: #fbfffe;
+  /* color: #fbfffe; */
   display: flex;
   padding: 0 5% 0 5%;
   margin-left: 30px;
@@ -17,7 +17,7 @@ export const WorkWrapper = styled.div`
     font-weight: 300;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    border-bottom: solid 1px #fcd1d1;
+    border-bottom: solid 1px #000000;
   }
   @media (max-width: 700px) {
     margin-right: 0;
@@ -29,7 +29,7 @@ export const EdWrapper = styled.div`
     font-weight: 300;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    border-bottom: solid 1px #fcd1d1;
+    border-bottom: solid 1px #000000;
   }
   @media (max-width: 700px) {
     margin: 40px 0;
@@ -37,7 +37,7 @@ export const EdWrapper = styled.div`
 `
 export const EdContent = styled.div`
   font-weight: 300;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   @media (max-width: 700px) {
     margin: 0 0 40px 0;
   }

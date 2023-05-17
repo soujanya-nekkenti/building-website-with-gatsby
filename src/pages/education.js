@@ -3,6 +3,7 @@ import "../styles/stepper.css"
 import grad from "../data/Education"
 import lang from "../data/Language"
 import hobby from "../data/Interests"
+import certifications from "../data/Certifications"
 import {
   ExperienceWrapper,
   WorkWrapper,
@@ -36,6 +37,16 @@ const Education = () => (
       </WorkWrapper>
 
       <EdWrapper>
+        <h1>Certifications</h1>
+        <EdContent>
+          {certifications.map(item => (
+            <div key={item.id}>
+              <p>
+                {item.name} - {item.certifiedBy}
+              </p>
+            </div>
+          ))}
+        </EdContent>
         <h1>Interests</h1>
         <EdContent>
           {hobby.map(item => (
